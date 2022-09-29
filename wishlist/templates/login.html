@@ -1,11 +1,25 @@
 {% extends 'base.html' %}
 
 {% block meta %}
+<style>
+    * {
+        text-align: center;
+        vertical-align: middle;
+        margin-left:auto;
+        margin-right:auto;
+        background-image: url(https://media.istockphoto.com/vectors/abstract-pink-background-geometric-texture-vector-id1199074776?b=1&k=20&m=1199074776&s=612x612&w=0&h=0afMKNkx2W1EQXuOrX8vSyaYIkISpYSJrUayTMWkjFM=);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+</style>
+
 <title>Login</title>
 {% endblock meta %}
 
 {% block content %}
-
+<body>
 <div class = "login">
 
     <h1>Login</h1>
@@ -41,5 +55,6 @@
     Belum mempunyai akun? <a href="{% url 'wishlist:register' %}">Buat Akun</a>
 
 </div>
+</body>
 
 {% endblock content %}
